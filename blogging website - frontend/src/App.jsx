@@ -19,7 +19,7 @@ const App = () => {
     return (
         <Routes>
             <Route path="/" element={<Layout />}>
-              <Route path="/main" element={<Main />} />
+              <Route path="/" element={<Main />} />
                 {/* <Route path="про-нас" element={<h1>aboutUs</h1>} /> */}
             </Route>
         </Routes>
