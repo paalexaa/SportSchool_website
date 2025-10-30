@@ -2,14 +2,14 @@ import logo from "../imgs/logo-removebg.png";
 
 const Footer = () => {
   return (
-    <footer className="mt-[50px] bg-[#0b5e62] text-white">
+    <footer className="mt-[20px] bg-[#0b5e62] text-white">
       <div className="h-[3px] w-full bg-white/10" />
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-10 md:px-12 lg:px-16 xl:px-[120px] py-10">
         {/* --- На середніх екранах (планшет): окремий верхній блок --- */}
         <div className="hidden md:flex lg:hidden flex-col items-center text-center mb-10">
           <img src={logo} alt="logo" className="w-20 h-auto object-contain mb-4"/>
-          <p className="text-sm leading-snug mb-4">
+          <p className="text-sm text-white text-[18px] leading-snug mb-4">
             Дитячо-юнацька спортивна школа <br />
             Вараської міської ради <br />
             Рівненської області
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="flex flex-col items-center gap-4 text-center md:hidden lg:flex">
             <div className="flex flex-col items-center gap-4">
               <img src={logo} alt="logo" className="w-20 h-auto object-contain"/>
-              <p className="text-sm leading-snug text-center  md:whitespace-nowrap md:truncate">
+              <p className="text-sm leading-snug text-center text-white md:whitespace-nowrap md:truncate">
                 Дитячо-юнацька спортивна школа <br />
                 Вараської міської ради <br />
                 Рівненської області

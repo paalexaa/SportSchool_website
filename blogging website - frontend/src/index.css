@@ -20,6 +20,9 @@
     img{
         @apply object-cover;
     }
+    p {
+        @apply font-montserrat font-normal text-[16px] text-black;
+    }
 
     .button{
         @apply bg-teal text-white px-4 py-2 rounded-lg hover:bg-teal-light font-semibold text-[14px];

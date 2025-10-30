@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import NewsCard from "../components/newsCard";
 import heroBanner from "../imgs/banner_svg.svg";
+import heroBannerMob from "../imgs/bannerMob_svg.svg";
 
 const TABS = ["Новини", "Баскетбол", "Волейбол", "Футбол", "Дзюдо", "Оголошення"];
 
@@ -68,15 +69,19 @@ export default function Home() {
   return (
     <>
       <section className="relative overflow-hidden flex justify-center">
-        <img
-          src={heroBanner}
-          alt="ДЮСШ Вараш — банер"
-          className="object-contain
-      h-auto
-      w-[125%] lg:w-full
-      max-w-none
-      transition-all duration-700 ease-in-out"
-        />
+            {/* Банер для мобільних */}
+            <img
+                src={heroBannerMob}
+                alt="ДЮСШ Вараш — банер мобільний"
+                className="object-contain h-auto w-[140%] sm:hidden max-w-none transition-all duration-700 ease-in-out"
+            />
+
+            {/* Банер для більших екранів */}
+            <img
+                src={heroBanner}
+                alt="ДЮСШ Вараш — банер"
+                className="object-contain h-auto w-[125%] lg:w-full hidden sm:block max-w-none transition-all duration-700 ease-in-out"
+            />
       </section>
 
       {/* Актуальні новини */}
