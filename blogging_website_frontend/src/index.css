@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "@flaticon/flaticon-uicons/css/all/all";
 
 @tailwind base;
@@ -6,42 +6,44 @@
 @tailwind utilities;
 
 @layer components {
-    * {
-        @apply m-0 p-0 box-border text-base duration-100;
-    }
+  * {
+    @apply m-0 p-0 box-border text-base duration-100;
+  }
 
-    html{
-        @apply overflow-x-hidden;
-    }
+  html {
+    @apply overflow-x-hidden;
+  }
 
-    body {
-        @apply font-montserrat font-normal text-black;
-    }
-    img{
-        @apply object-cover;
-    }
-    p {
-        @apply font-montserrat font-normal text-[16px] text-black;
-    }
+  body {
+    @apply font-montserrat font-normal text-black;
+  }
+  img {
+    @apply object-cover;
+  }
+  p {
+    @apply font-montserrat font-normal text-[16px] text-black;
+  }
 
-    .button{
-        @apply bg-teal text-white px-4 py-2 rounded-lg hover:bg-teal-light font-semibold text-[14px];
-    }
+  .button {
+    @apply bg-teal text-white px-4 py-2 rounded-lg hover:bg-teal-light font-semibold text-[14px];
+  }
 
-    .navbar{
-        @apply z-10 sticky top-0 flex items-center gap-12 w-full px-[5vw] py-5 h-[120px] border-b border-grey bg-white;
-    }
-    #textEditor h3, h3 {
-        @apply font-montserrat font-bold mb-4;
-    }
+  .navbar {
+    @apply z-10 sticky top-0 flex items-center gap-12 w-full px-[5vw] py-5 h-[120px] border-b border-grey bg-white;
+  }
+  #textEditor h3,
+  h3 {
+    @apply font-montserrat font-bold mb-4;
+  }
 }
 
-.ce-block__content, .ce-toolbar__content{
-    max-width: 900px;
+.ce-block__content,
+.ce-toolbar__content {
+  max-width: 900px;
 }
 
-.cdx-settings-button[data-tune='withBorder'],
-.cdx-settings-button[data-tune='withBackground'],
-.cdx-settings-button[data-tune='stretched'] {
+.cdx-settings-button[data-tune="withBorder"],
+.cdx-settings-button[data-tune="withBackground"],
+.cdx-settings-button[data-tune="stretched"] {
   display: none;
 }

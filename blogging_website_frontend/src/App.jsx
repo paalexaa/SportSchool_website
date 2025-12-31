@@ -1,5 +1,3 @@
-import { Snowfall } from "frost-react";
-
 import { Route, Routes, Outlet } from "react-router-dom";
 import Footer from "./components/footer";
 import NavBar from "./components/navbar";
@@ -47,7 +45,6 @@ import EnrollToSchool from "./pages/enrollToSchool";
 function Layout() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Snowfall />
       <NavBar />
       <main className="flex-1">
         <Outlet />
