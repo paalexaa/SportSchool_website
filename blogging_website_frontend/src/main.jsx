@@ -9,6 +9,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <Snowfall
       color="#82C3D9"
+      snowflakeCount={100}
+      speed={[0.5, 1.5]}
       style={{
         position: "fixed",
         inset: 0,
