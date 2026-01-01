@@ -3,6 +3,7 @@ import { getNews } from "../api/wordpress";
 import NewsCard from "../components/newsCard";
 import heroBanner from "../imgs/banner_svg.svg";
 import heroBannerMob from "../imgs/bannerMob_svg.svg";
+import { Link } from "react-router-dom";
 
 const TABS = [
   "Новини",
@@ -170,9 +171,9 @@ export default function Home() {
 
             {/* Посилання праворуч*/}
             <div className="font-montserrat font-semibold text-[18px] text-[#005960] mt-4 text-right ">
-              <a href="/новини" className="hover:underline">
+              <Link to="/новини" className="hover:underline">
                 Всі новини
-              </a>
+              </Link>
             </div>
           </>
         )}
