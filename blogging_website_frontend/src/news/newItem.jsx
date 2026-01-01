@@ -179,7 +179,7 @@ export default function NewsDetail() {
         />
 
         {/* Back Button */}
-        <div className="mt-12 pt-8 border-t">
+        {/* <div className="mt-12 pt-8 border-t">
           <a
             href="/новини"
             className="inline-flex items-center gap-2 text-[#006d63] hover:text-[#005960] font-semibold transition"
@@ -199,7 +199,7 @@ export default function NewsDetail() {
             </svg>
             Повернутися до всіх новин
           </a>
-        </div>
+        </div> */}
       </main>
     </>
   );
